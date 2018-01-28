@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<!--    This file uses bootstrap for the grid layout and responsive design patterns.
+        Author: Sherin Kuruvilla  1/27/2018
+-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title> Sherin Kuruvilla Portfolio - Udacity Project FSWD Project #2 </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!--  The top level is the container class from Bootstrap.
+          Each row, has the proper columns width defined for
+          Nexus (<768px), iPad (768-970 px), and normal desktop.
+          These sizes are provided by default in bootstrap.
+          The heading row will size differently and fonts will scale
+          for smaller devices like Nexus, and show a larger font
+          for medium and large devides
+    -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-sm-4 col-md-6">
+          <img src="img/udacity.svg" class="img-responsive title-img" alt="Udacity Logo">
+        </div>
+        <div class="col-xs-10 col-sm-8 col-md-6 text-right text-uppercase">
+          <h1 class="text-thin title-h1">Jane Doette</h1>
+          <h4 class="title-h4">Front-end Ninja</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <hr>
+          <img src="img/kittens.jpg" class="img-responsive" alt="Main Image">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-muted">
+          <h2 class="title-h2">Featured Work</h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-4 col-md-4">
+          <img src="img/appify.jpg" class="img-responsive img-project" alt="Appify" data-toggle="modal" data-target="#Appify">
+          <h3 class="title-h3">Appify</h3>
+          <nav><a href="http://github.com">Link to project</a></nav>
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <img src="img/sunflower.jpg" class="img-responsive img-project" alt="SunFlower" data-toggle="modal" data-target="#SunFlower">
+          <h3 class="title-h3">SunFlower</h3>
+          <nav><a href="http://github.com">Link to project</a></nav>
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <img src="img/bokeh.jpg" class="img-responsive img-project" alt="Bokeh" data-toggle="modal" data-target="#Bokeh">
+          <h3 class="title-h3">Bokeh</h3>
+          <nav><a href="http://github.com">Link to project</a></nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Appify.
+        These are modal windows or popups that are hidden by default.
+        When user clicks on each image, these popups will appear.\
+        There is one About page for each of the three projects.
+    -->
+    <div class="modal fade" id="Appify" tabindex="-1" role="dialog" aria-labelledby="AppifyLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="AppifyLabel">About Appify</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="img/Appify.jpg" alt="About Appify">
+                    <article class="about-article">
+                    <h5>App Generator</h5>
+                    Appify is the first project in our portfolio for a reason.  This app would help turn any requirement to a fully functional application with configurable options user can select.  The app is completely ready in a few clicks, and looks awesome! This application was build using bootstrap framework and additional jquery libraries developed by us.
+                  </article>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal SunFlower-->
+    <div class="modal fade" id="SunFlower" tabindex="-1" role="dialog" aria-labelledby="SunFlowerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="SunFlowerLabel">About SunFlower</h4>
+                </div>
+                <div class="modal-body">
+                  <img class="img-responsive" src="img/SunFlower.jpg"  alt="About SunFlower">
+                    <article class="about-article">
+                      <h5>Plant Catalog</h5>
+                      SunFlower is the second project in our portfolio, and our most favourite.
+                      <section class="about-section">
+                        <h5>Easy Identification</h5>
+                        SunFlower is a website that catalogs the different flaura and fauna species in north america.   Botanists and casual users can identify any plant species through image recogition, family trees and searches.
+                      </section>
+                      <section class="about-section">
+                        <h5>Technical details</h5>
+                        The site was built using HTML5 and CSS using bootstrap. The classification and search engine was built using python.
+                      </section>
+                    </article>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Bokeh-->
+    <div class="modal fade" id="Bokeh" tabindex="-1" role="dialog" aria-labelledby="BokehLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="BokehLabel">About Bokeh</h4>
+                </div>
+                <div class="modal-body">
+                  <img class="img-responsive" src="img/Bokeh.jpg"  alt="About Bokeh">
+                  <article class="about-article">
+                    <h5> Professional Photo Library</h5>
+                    Bokeh is the last project in our portfolio, but certainly not the least.  This app is a searchable directory of professional grade photographs.   Free version provides high quality 1080p images that would make any website stand out.  Paid copies of the photos with ultra high resolution can be purchased.
+                  </article>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
